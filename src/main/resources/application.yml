@@ -1,0 +1,8 @@
+spring.cloud.stream:
+  bindings:
+    consumer-in-0:
+      destination: test
+      group: spring-cloud-stream-sample
+  kafka.binder:
+    brokers: localhost:19092
+    replicationFactor: 1
